@@ -1,0 +1,19 @@
+p {
+    color: rgb(128, 70, 161);
+}
+
+#description {
+    font-size: larger;
+}
+
+.silly{
+    background-color: rgb(126, 126, 255);
+}
+
+.important {
+    color: red
+}
+
+h2.important {
+    font-size: 32px;
+}
