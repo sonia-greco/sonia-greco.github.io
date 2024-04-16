@@ -44,7 +44,7 @@
 }
 
 .button-press-animation button:active {
-    transform: scale(0.85);
+    transform: scale(90%);
     transition: 0.5s;
 }
 
@@ -58,12 +58,15 @@
 }
 
 .simple-loading-spinner .spinner {
-    animation: simple-loading-spinner 2s infinite linear;
+    animation: simple-loading-spinner 1s infinite linear;
 }
 
 @keyframes simple-loading-spinner {
     from {
         transform: rotate(-360deg);
+    }
+    to {
+        transform: rotate(0deg);
     }
 }
 
@@ -77,23 +80,32 @@
     width: 100px;
     height: 100px;
     object-fit: cover;
+    opacity: 0.5;
+    transition: 0.5s;
 }
 
-.on-hover {
+.fading-gallery img:hover {
+    opacity: 1;
+    transform: scale(1.05) translateY(-10px);
+    box-shadow: 5px 5px 5px gray;
+    transition: 0.5s;
+}
+
+/*.on-hover {
     border: 1px solid black;
     padding: 4px;
 }
 
-.on-hover:hover {
+/*.on-hover:hover {
     background-color: pink;
     padding: 2px;
 }
 
-.on-hover:active{
+/*.on-hover:active{
     color: red;
 }
 
-.rainbow {
+/*.rainbow {
     color: red;
     font-size: 2em;
     font-weight: bold;
@@ -105,7 +117,7 @@
     animation: rainbow 1s infinite linear;
 }
 
-@keyframes rainbow {
+/*@keyframes rainbow {
     from {
         color: red;
     }
