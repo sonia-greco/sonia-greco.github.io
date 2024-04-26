@@ -30,9 +30,9 @@ console.log(sum);
 
 console.log("Task 5");
 //loop through 1 to 10
+let iFactorial = 1;
 for (let i = 1; i <= 10; i++) {
-    let iFactorial = i;
-    iFactorial = i * i;
+    iFactorial = iFactorial * i;
     console.log(iFactorial);
 }
 
