@@ -35,7 +35,34 @@ for (let i = 1; i <= 10; i++) {
     iFactorial = iFactorial * i;
     console.log(iFactorial);
 }
-
 //loop through 1 to i
 //multiply ifactorial by your new number
 //printifactorial
+
+console.log("Task 6");
+let arr = [3, 1, 4, 1, 5];
+for (let i = 1; i <= 5; i++) {
+}
+console.log(arr);
+
+console.log("Task 7");
+for (let i = 0; i < arr.length; i++) {
+    console.log(arr.at(-i - 1));
+}
+
+console.log("Task 8");
+let cubed = [];
+for (let i = 1; i <= 10; i++) {
+    cubed.push(i ** 3);
+    console.log(cubed);
+}
+
+console.log("Task 9");
+let fib = [];
+for (let i = 0; i <= 9; i++){
+    fib.push(i + i--);
+    console.log(fib);
+}
+
+    //document.getelement.id
+console.log("Task 10");
