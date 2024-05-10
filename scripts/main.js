@@ -50,19 +50,26 @@ for (let i = 0; i < arr.length; i++) {
     console.log(arr.at(-i - 1));
 }
 
+
 console.log("Task 8");
 let cubed = [];
 for (let i = 1; i <= 10; i++) {
     cubed.push(i ** 3);
-    console.log(cubed);
 }
+    console.log(cubed);
 
 console.log("Task 9");
-let fib = [];
+let fib = [0, 1];
 for (let i = 0; i <= 9; i++){
-    fib.push(i + i--);
-    console.log(fib);
+    fib.push(fib.at(-1) + fib.at(-2));
 }
+console.log(fib);
 
-    //document.getelement.id
+
 console.log("Task 10");
+let emptyarr = [];
+for (let i = 0; i < arr.length; i++) {
+    emptyarr.push(arr.at(-i - 1));
+}
+console.log(emptyarr);
+
