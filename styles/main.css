@@ -1,6 +1,10 @@
+span.sort {
+    font-style: oblique;
+}
+
 .nav-bar ul {
     display: flex;
-    font-family: 'Avantgarde', TeX Gyre Adventor, URW Gothic L, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     gap: 10px;
     list-style: none;
     margin: 0;
@@ -16,10 +20,6 @@
     transition-duration: 1s;
 }
 
-.nav-bar a:active {
-    color: #1a353f;
-}
-
 .nav-bar a:hover {
     padding: 14px 16px;
     background-color: #1a353f;
@@ -27,17 +27,51 @@
     transition-duration: 1s;
 }
 
+.by-genre a {
+    color: black;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+.by-genre a:hover {
+    background-color: #90AEAD;
+    font-size: 105%;
+    transition-duration: 0.5s;
+}
+
+.by-artist a {
+    color: black;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+.by-artist a:hover {
+    background-color: #e64833a3;
+    font-size: 105%;
+    transition-duration: 0.5s;
+}
 
 h1 {
-    font-family: 'Bookman', URW Bookman L, serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 p {
-    font-family: 'Avantgarde', TeX Gyre Adventor, URW Gothic L, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 img {
     border: 3px dotted #90AEAD;
+    transition-duration: 1s;
+}
+
+img:hover {
+    box-shadow: 10px 5px 5px #1a353f;
+    transform: translate(5px, 5px);
+    transition-duration: 1s;
+}
+
+li {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* p {
