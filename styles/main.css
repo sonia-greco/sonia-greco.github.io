@@ -1,4 +1,46 @@
+.nav-bar ul {
+    display: flex;
+    font-family: 'Avantgarde', TeX Gyre Adventor, URW Gothic L, sans-serif;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 20px 16px;
+    background-color: #244855;
+}
+
+.nav-bar a {
+    padding: 14px 16px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 1s;
+}
+
+.nav-bar a:active {
+    color: #1a353f;
+}
+
+.nav-bar a:hover {
+    padding: 14px 16px;
+    background-color: #1a353f;
+    box-shadow: 5px 5px 5px #1a353f;
+    transition-duration: 1s;
+}
+
+
+h1 {
+    font-family: 'Bookman', URW Bookman L, serif;
+}
+
 p {
+    font-family: 'Avantgarde', TeX Gyre Adventor, URW Gothic L, sans-serif;
+}
+
+img {
+    border: 3px dotted #90AEAD;
+}
+
+/* p {
     color: rgb(128, 70, 161);
 }
 
@@ -16,4 +58,4 @@ p {
 
 h2.important {
     font-size: 32px;
-}
+} */
