@@ -4,13 +4,14 @@ span.sort {
 
 .nav-bar ul {
     display: flex;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'courier', monospace;
     gap: 10px;
     list-style: none;
     margin: 0;
     padding: 20px 16px;
     background-color: #244855;
 }
+
 
 .nav-bar a {
     padding: 14px 16px;
@@ -27,7 +28,16 @@ span.sort {
     transition-duration: 1s;
 }
 
+.by-genre h2 {
+    font-family: monospace;
+}
+
+.by-artist h2 {
+    font-family: monospace;
+}
+
 .by-genre a {
+    font-family: 'courier', monospace;
     color: black;
     text-decoration: none;
     transition-duration: 0.5s;
@@ -40,7 +50,7 @@ span.sort {
 }
 
 .by-artist a {
-    color: black;
+    font-family: 'courier', monospace;
     text-decoration: none;
     transition-duration: 0.5s;
 }
@@ -51,12 +61,27 @@ span.sort {
     transition-duration: 0.5s;
 }
 
+#music {
+    display: flex;
+    justify-content: center;
+    color: #E64833;
+    text-shadow: rgb(255, 128, 0) 1px 0 10px;
+}
+
+h3 {
+    font-family: monospace;
+}
+
+li > a {
+    color: black;
+}
+
 h1 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: monospace;
 }
 
 p {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'courier', monospace;
 }
 
 img {
@@ -71,25 +96,31 @@ img:hover {
 }
 
 li {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'courier', monospace;
 }
 
-/* p {
-    color: rgb(128, 70, 161);
+#personalfavs {
+    text-shadow: #AC3B61 1px 0 10px;
+    color: #AC3B61;
+    font-family: monospace;
+    animation-fill-mode: both;
+    animation: personalfavs 5s infinite linear;
 }
 
-#description {
-    font-size: larger;
+@keyframes personalfavs {
+    0% {
+        color: #AC3B61
+    }
+    25% {
+        color: #EDC7B7;
+    }
+    50% {
+        color: #EEE2DC;
+    }
+    75% {
+        color: #BAB2B5;
+    }
+    100% {
+        color: #123C69;
+    }
 }
-
-.silly{
-    background-color: rgb(126, 126, 255);
-}
-
-.important {
-    color: red
-}
-
-h2.important {
-    font-size: 32px;
-} */
