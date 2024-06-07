@@ -8,28 +8,29 @@ span.sort {
     gap: 10px;
     list-style: none;
     margin: 0;
-    padding: 20px 16px;
+    padding: 20px 20px;
+    overflow: hidden;
     background-color: #244855;
 }
 
 
 .nav-bar a {
-    padding: 14px 16px;
-    color: rgb(255, 255, 255);
+    padding: 20px 16px;
+    color: #EBE9E1;
     text-align: center;
     text-decoration: none;
     transition-duration: 1s;
 }
 
 .nav-bar a:hover {
-    padding: 14px 16px;
-    background-color: #1a353f;
-    box-shadow: 5px 5px 5px #1a353f;
+    padding: 20px 16px;
+    background-color: #0b2f3b;
     transition-duration: 1s;
 }
 
 .by-genre h2 {
     font-family: monospace;
+
 }
 
 .by-artist h2 {
@@ -53,21 +54,14 @@ span.sort {
     font-family: 'courier', monospace;
     text-decoration: none;
     transition-duration: 0.5s;
+    font-weight: bold;
 }
 
 .by-artist a:hover {
     background-color: #e64833a3;
     font-size: 105%;
     transition-duration: 0.5s;
-}
-
-#music {
-    font-size: 300%;
-    padding: 20px 20px;
-    display: flex;
-    justify-content: center;
-    color: #E64833;
-    text-shadow: rgb(255, 128, 0) 1px 0 10px;
+    font-weight :bold;
 }
 
 h3 {
@@ -127,10 +121,39 @@ li {
     }
 }
 
+#music {
+    font-size: 300%;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+    color: #AC3B61;
+    text-shadow: #d66fb4 1px 0 20px;
+    animation-fill-mode: both;
+    animation: music 5s infinite linear;
+}
+
+@keyframes music {
+    0% {
+        color: #5D001E
+    }
+    25% {
+        color: #E3E2DF;
+    }
+    50% {
+        color: #E3AFBC;
+    }
+    75% {
+        color: #9A1750;
+    }
+    100% {
+        color: #EE4C7C;
+    }
+}
 
 #songofday {
     display: flex;
     justify-content: center;
     font-family: 'courier', monospace;
+    background-color: #BAB2B5;
     box-shadow: 10px 5px 5px #AC3B61;
 }
