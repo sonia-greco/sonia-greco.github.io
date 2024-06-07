@@ -62,6 +62,8 @@ span.sort {
 }
 
 #music {
+    font-size: 300%;
+    padding: 20px 20px;
     display: flex;
     justify-content: center;
     color: #E64833;
@@ -123,4 +125,12 @@ li {
     100% {
         color: #123C69;
     }
+}
+
+
+#songofday {
+    display: flex;
+    justify-content: center;
+    font-family: 'courier', monospace;
+    box-shadow: 10px 5px 5px #AC3B61;
 }
